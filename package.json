@@ -1,0 +1,22 @@
+{
+  "name": "snoew.com",
+  "version": "1.0.0",
+  "description": "Front end of snoew.com",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Snoew/snoew.com.git"
+  },
+  "keywords": [
+    "snoew"
+  ],
+  "author": "Sam Bentley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Snoew/snoew.com/issues"
+  },
+  "homepage": "https://github.com/Snoew/snoew.com#readme"
+}
