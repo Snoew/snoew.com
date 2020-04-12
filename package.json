@@ -18,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/Snoew/snoew.com/issues"
   },
-  "homepage": "https://github.com/Snoew/snoew.com#readme"
+  "homepage": "https://github.com/Snoew/snoew.com#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.0",
+    "react": "^16.13.1",
+    "requirejs": "^2.3.6"
+  }
 }
