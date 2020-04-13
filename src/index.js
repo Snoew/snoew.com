@@ -13,8 +13,9 @@ var requestOptions = {
 
 fetch("http://localhost:42069/streams", requestOptions)
 .then(response => response.text())
-.then(result => showInfo(JSON.parse(result)))
+.then(result => showStreams(JSON.parse(result)))
 .catch(error => console.log('error', error));
+
 
 ReactDOM.render(
   <React.StrictMode>
@@ -23,7 +24,12 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-function showInfo(info) {
+function showStreams(info) {
+  ReactDOM.render(
+      <App live={info.data[0].user_name}/>,
+    document.getElementById('root')
+  );
+  
   console.log(info.data[0].user_name)
   ReactDOM.render(<Viewer channel={info.data[0].user_name}/>, document.getElementById('info'));
 }

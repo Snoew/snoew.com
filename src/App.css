@@ -3,24 +3,27 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 5vmin;
   pointer-events: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+  /* .App-logo {
     animation: App-logo-spin infinite 20s linear;
-  }
+  } */
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 50vh;
+  height: 5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: left;
+  /* font-size: calc(10px + 2vmin); */
   color: white;
 }
 
@@ -34,5 +37,33 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+#names {
+  color: red;
+  animation-name: liveNow;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes liveNow {
+  0%   {
+      filter: brightness(1);
+      filter: contrast(1);
+      -webkit-filter: brightness(1);
+      -webkit-filter: contrast(1);
+  }
+  50%  {
+      filter: brightness(0.4);
+      filter: contrast(0.4);
+      -webkit-filter: brightness(0.4);
+      -webkit-filter: contrast(0.4);
+  }
+  100% {
+      filter: brightness(1);
+      filter: contrast(1);
+      -webkit-filter: brightness(1);
+      -webkit-filter: contrast(1);
   }
 }

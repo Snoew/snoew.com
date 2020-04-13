@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import './Viewer.css'
 
 const EMBED_URL = 'https://embed.twitch.tv/embed/v1.js';
 
@@ -28,11 +28,13 @@ class Viewer extends React.Component {
         let twitchUrl = "https://player.twitch.tv/?channel=" + this.state.username;
         return (
             <iframe
+                className="Viewer"
                 src={twitchUrl}
                 height={this.props.height}
                 width={this.props.width}
                 frameborder="<frameborder>"
                 scrolling="<scrolling>"
+                muted="false"
                 allowfullscreen="<allowfullscreen>">
             </iframe>
         )
